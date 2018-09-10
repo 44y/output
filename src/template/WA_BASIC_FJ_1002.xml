@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MESSAGE>
+ <DATASET name="WA_COMMON_010017" description="" rmk="数据文件索引信息">
+  <DATA>
+   <DATASET name="WA_COMMON_010013" rmk="BCP文件描述信息">
+    <DATA>
+     <ITEM key="I010032" val="" rmk="列分隔符（缺少值时默认为制表符\t）"/>
+     <ITEM key="I010033" val="" rmk="行分隔符（缺少值时默认为换行符\n）"/>
+     <ITEM key="A010004" val="WA_BASIC_FJ_1002" rmk="数据集代码" chn="终端特征采集设备基础信息" />
+     <ITEM key="B050016" val="146" rmk="数据来源"/>
+     <ITEM key="G020013" val="" rmk="网安专用产品厂家组织机构代码"/>
+     <ITEM key="F010008" val="" rmk="数据采集地"/>
+     <ITEM key="I010038" val="1" rmk="数据起始行，可选项，不填写默认为第1行"/>
+     <ITEM key="I010039" val="UTF-8" rmk="可选项，默认为UTF-8，BCP文件编码格式（采用不带格式的编码方式，如：UTF-８无BOM）"/>
+     <DATASET name="WA_COMMON_010014" rmk="BCP数据文件信息">
+        <!-- 如有多个bcp文件则用多个DATA子节点 -->
+      <DATA>
+       <ITEM key="H040003" val="" rmk="文件路径" />
+       <ITEM key="H010020" val="" rmk="文件名" />
+       <ITEM key="I010034" val="" rmk="记录行数" />
+       </DATA>
+     </DATASET>
+     <DATASET name="WA_COMMON_010015" rmk="BCP文件数据结构">
+      <DATA>
+            <ITEM idx="1" from="config" required="1" key="G020004" eng="NETBAR_WACODE" alias="netbar_wacode" chn="场所编号" />
+            <ITEM idx="2" from="config" required="1" key="I070011" eng="COLLECTION_EQUIPMENTID" alias="collection_equipment_id" chn="采集设备编号" />
+            <ITEM idx="3" from="config" required="1" key="I070012" eng="CLLECTION_EQUIPMENT_NAME" alias="place_name" chn="采集设备名称" />
+            <ITEM idx="4" from="config" required="1" key="I070013" eng="COLLECTION_EQUIPMENT_ADRESS" alias="site_address" chn="设备地址" />
+            <ITEM idx="5" from="config" required="1" key="I070014" eng="COLLECTION_EQUIPMENT_TYPE" alias="collection_equipment_type" chn="采集设备类型" />
+            <ITEM idx="6" from="config" required="1" key="G020013" eng="SECURITY_SOFTWARE_ORGCODE" alias="security_software_orgcode" chn="安全厂商组织机构代码" />
+            <ITEM idx="7" from="config" required="1" key="F010018" eng="COLLECTION_EQUIPMENT_LONGITUDE" alias="longitude" chn="采集设备经度" />
+            <ITEM idx="8" from="config" required="1" key="F010019" eng="COLLECTION_EQUIPMENT_LATITUDE" alias="latitude" chn="采集设备纬度" />
+            <ITEM idx="9" from="config" required="1" key="I070015" eng="UPLOAD_TIME_INTERVAL" alias="trans_interval" chn="上传数据间隔时间" />
+            <ITEM idx="10" from="config" required="1" key="I070004" eng="COLLECTION_RADIUS" alias="access_radius" chn="采集半径" />
+            <ITEM idx="11" from="config" required="0" key="C030002" eng="VEHICLE_CODE" alias="" chn="车牌号码" />
+            <ITEM idx="12" from="config" required="0" key="C030006" eng="SUBWAY_LINE_INFO" alias="" chn="地铁线路信息" />
+            <ITEM idx="13" from="config" required="0" key="C030007" eng="SUBWAY_VEHICLE_INFO" alias="" chn="地铁车辆信息" />
+            <ITEM idx="14" from="config" required="0" key="C030008" eng="SUBWAY_COMPARTMENT_NUMBER" alias="" chn="地铁车厢编号" />
+      </DATA>
+     </DATASET>
+    </DATA>
+   </DATASET>
+  </DATA>
+ </DATASET>
+</MESSAGE>

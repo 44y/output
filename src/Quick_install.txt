@@ -1,0 +1,8 @@
+解压：
+tar -zxvf audit_output.tar.gz
+
+安装：
+./install.sh
+
+启动：
+audit_output &

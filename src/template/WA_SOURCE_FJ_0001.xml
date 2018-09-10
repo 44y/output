@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MESSAGE>
+ <DATASET name="WA_COMMON_010017" description="" rmk="数据文件索引信息">
+  <DATA>
+   <DATASET name="WA_COMMON_010013" rmk="BCP文件描述信息">
+    <DATA>
+     <ITEM key="I010032" val="" rmk="列分隔符（缺少值时默认为制表符\t）"/>
+     <ITEM key="I010033" val="" rmk="行分隔符（缺少值时默认为换行符\n）"/>
+     <ITEM key="A010004" val="WA_SOURCE_FJ_0001" rmk="数据集代码" chn="终端上下线信息"/>
+     <ITEM key="B050016" val="145" rmk="数据来源"/>
+     <ITEM key="G020013" val="" rmk="网安专用产品厂家组织机构代码"/>
+     <ITEM key="F010008" val="" rmk="数据采集地"/>
+     <ITEM key="I010038" val="1" rmk="数据起始行，可选项，不填写默认为第1行"/>
+     <ITEM key="I010039" val="UTF-8" rmk="可选项，默认为UTF-8，BCP文件编码格式（采用不带格式的编码方式，如：UTF-８无BOM）"/>
+     <DATASET name="WA_COMMON_010014" rmk="BCP数据文件信息">
+        <!-- 如有多个bcp文件则用多个DATA子节点 -->
+      <DATA>
+       <ITEM key="H040003" val="" rmk="文件路径" />
+       <ITEM key="H010020" val="" rmk="文件名" />
+       <ITEM key="I010034" val="" rmk="记录行数" />
+       </DATA>
+     </DATASET>
+     <DATASET name="WA_COMMON_010015" rmk="BCP文件数据结构">
+      <DATA>
+            <ITEM idx="1" required="1" key="B040021" eng="AUTH_TYPE" alias="auth_type" from="base" chn="认证类型" />
+            <ITEM idx="2" required="1" key="B040022" eng="AUTH_ACCOUNT" alias="auth_account" from="base" chn="认证帐号" />
+            <ITEM idx="3" required="1" key="G020004" eng="NETBAR_WACODE" alias="netbar_wacode" from="config" chn="上网服务场所编码" />
+            <ITEM idx="4" required="1" key="G020020" eng="NetSite_Type" alias="netsite_type" from="config" chn="场所类型" />
+            <ITEM idx="5" required="1" key="B030004" eng="CERTIFICATE_TYPE" alias="certificate_type" from="base" chn="身份证件类型" />
+            <ITEM idx="6" required="1" key="B030005" eng="CERTIFICATE_CODE" alias="auth_mac" from="base" chn="身份证件号码" />
+            <ITEM idx="7" required="0" key="G030001" eng="APP_COMPANY_NAME" alias="" from="base" chn="APP厂商名称" />
+            <ITEM idx="8" required="0" key="G030002" eng="APP_SOFTWARE_NAME" alias="" from="base" chn="APP应用软件名称" />
+            <ITEM idx="9" required="0" key="G030003" eng="APP_VERSION" alias="" from="base" chn="APP版本号" />
+            <ITEM idx="10" required="0" key="G030004" eng="APPID" alias="" from="config" chn="APP终端认证码" />
+            <ITEM idx="11" required="1" key="H010015" eng="START_TIME" alias="auth_login_time" from="base" chn="上线时间" />
+            <ITEM idx="12" required="1" key="H010016" eng="END_TIME" alias="auth_logout_time" from="event" chn="下线时间" />
+            <ITEM idx="13" required="1" key="F020001" eng="IP_ADDRESS" alias="auth_ip" from="base" chn="场所内网IP地址" />
+            <ITEM idx="14" required="1" key="F020004" eng="SRC_IP" alias="wan_ip" from="base" chn="源外网IPv4地址" />
+            <ITEM idx="15" required="1" key="F020010" eng="SRC_IPV6" alias="" from="base" chn="源外网IPv6地址" />
+            <ITEM idx="16" required="1" key="F020019" eng="SRC_PORT_START" alias="src_port_start" from="base" chn="源外网IPv4起始端口号" />
+            <ITEM idx="17" required="1" key="F020020" eng="SRC_PORT_END" alias="src_port_end" from="base" chn="源外网IPv4结束端口号" />
+            <ITEM idx="18" required="1" key="F020021" eng="SRC_PORT_START_V6" alias="" from="base" chn="源外网IPv6起始端口号" />
+            <ITEM idx="19" required="1" key="F020022" eng="SRC_PORT_END_V6" alias="" from="base" chn="源外网IPv6结束端口号" />
+            <ITEM idx="20" required="1" key="C040002" eng="MAC" alias="auth_mac" from="base" chn="终端MAC地址" />
+            <ITEM idx="21" required="1" key="I070011" eng="COLLECTION_EQUIPMENT_ID" alias="collection_equipment_id" from="config" chn="AP设备编号" />
+            <ITEM idx="22" required="1" key="F030011" eng="AP_MAC" alias="ap_mac" from="config" chn="AP设备MAC地址" />
+            <ITEM idx="23" required="1" key="F010001" eng="LONGITUDE" alias="longitude" from="config" chn="移动AP经度" />
+            <ITEM idx="24" required="1" key="F010002" eng="LATITUDE" alias="latitude" from="config" chn="移动AP纬度" />
+            <ITEM idx="25" required="1" key="H010013" eng="SESSIONID" alias="sessionid" from="base" chn="会话ID" />
+            <ITEM idx="26" required="1" key="I070003" eng="TERMINAL_FIELD_STRENGTH" alias="signal" from="base" chn="场强" />
+            <ITEM idx="27" required="0" key="I070001" eng="X_COORDINATE" alias="x_coordinate" from="base" chn="X坐标" />
+            <ITEM idx="28" required="0" key="I070002" eng="Y_COORDINATE" alias="y_coordinate" from="base" chn="Y坐标" />
+            <ITEM idx="29" required="0" key="B010001" eng="Name" alias="" from="base" chn="上网人员姓名" />
+            <ITEM idx="30" required="0" key="B020007" eng="IMSI" alias="" from="base" chn="终端IMSI码" />
+            <ITEM idx="31" required="0" key="C050001" eng="IMEI_ESN_MEID" alias="" from="base" chn="终端IMEI码" />
+            <ITEM idx="32" required="0" key="C020004" eng="OS_NAME" alias="" from="base" chn="终端系统" />
+            <ITEM idx="33" required="0" key="C010002" eng="BRAND" alias="" from="base" chn="终端品牌" />
+            <ITEM idx="34" required="0" key="C010003" eng="MODEL" alias="" from="base" chn="终端型号" />
+      </DATA>
+     </DATASET>
+    </DATA>
+   </DATASET>
+  </DATA>
+ </DATASET>
+</MESSAGE>
